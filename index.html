@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<!--     
+    <input type="text" id="password" placeholder="nhập mật khẩu" >
+    <button type="submit" onclick="login()" id="btn"> đăng nhập</button>
+    <p id="result"></p> -->
+</body>
+<script>
+    let count = 5;
+    // function login(){
+    //     let result
+    //     let password = document.getElementById('password').value;
+    //     if(password == 12345){
+    //         result = document.getElementById('result').innerHTML = 'mật khẩu đúng, đăng nhập thành công!';
+               
+    //     }else{
+    //         while(count >= 0){
+    //             result = document.getElementById('result').innerHTML = 'mật khẩu sai, bạn còn ' + count + ' lần nhập lại';
+    //             if(count = 0 ){
+    //                 result = document.getElementById('result').innerHTML = 'bạn đã hết số lần nhập';
+    //             }
+    //             count--
+    //             }
+    //      }
+
+    // } 
+
+    let password = prompt('nhập mật khẩu')
+
+    while( count >=0){
+        if( password == 12345){
+            alert('mật khẩu đúng')git 
+            break
+        }
+        else{
+        
+            password = prompt(' mật khẩu sai, bạn còn ' + count + ' lần nhập lại')
+            count--
+            if(count == 0){
+                alert('bạn đã nhập quá số lần cho phép')
+                break
+            }
+        }
+        
+    }
+        
+
+</script>
+</html>
